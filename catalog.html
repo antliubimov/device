@@ -82,26 +82,32 @@
     <section class="filters">
       <h3>Фильтр:</h3>
       <form action="URL">
-        <label for="value">Стоимость</label>
-        <input type="range" name="costs" id="value">
+        <fieldset>
+          <legend>Стоимость</legend>
+          <input type="range" name="costs" id="value">
+        </fieldset>
 
-        <p>Цвет</p>
-        <input type="checkbox" name="black" id="black">
-        <label for="black">Черный</label>
-        <input type="checkbox" name="black" id="white">
-        <label for="white">Белый</label>
-        <input type="checkbox" name="black" id="blue">
-        <label for="blue">Синий</label>
-        <input type="checkbox" name="black" id="red">
-        <label for="red">Красный</label>
-        <input type="checkbox" name="black" id="pink">
-        <label for="pink">Розовый</label>
+        <fieldset>
+          <legend>Цвет</legend>
+          <input type="checkbox" name="black" id="black">
+          <label for="black">Черный</label>
+          <input type="checkbox" name="black" id="white">
+          <label for="white">Белый</label>
+          <input type="checkbox" name="black" id="blue">
+          <label for="blue">Синий</label>
+          <input type="checkbox" name="black" id="red">
+          <label for="red">Красный</label>
+          <input type="checkbox" name="black" id="pink">
+          <label for="pink">Розовый</label>
+        </fieldset>
 
-        <p>Bluetooth</p>
-        <input type="radio" name="has" id="has">
-        <label for="has">Есть</label>
-        <input type="radio" name="no_has" id="no_has">
-        <label for="no_has">Нет</label>
+        <fieldset>
+          <legend>Bluetooth</legend>
+          <input type="radio" name="has" id="has">
+          <label for="has">Есть</label>
+          <input type="radio" name="no_has" id="no_has">
+          <label for="no_has">Нет</label>
+        </fieldset>
       </form>
     </section>
 
