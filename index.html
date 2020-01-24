@@ -15,14 +15,13 @@
       <a href="#" class="main-header__logo">
         <img src="/img/header/device.svg" alt="Логотип магазина Device">
       </a>
-
+      <input type="search" class="user-search">
       <ul class="main-content">
         <li>
-          <input type="search" class="user-search">
-        </li>
-        <li>
           <ul class="user-navigation">
-            <li>Вход</li>
+            <li>
+              <a href="#">Вход</a>
+            </li>
           </ul>
         </li>
         <li>
@@ -33,30 +32,29 @@
         </li>
       </ul>
 
-      <ul class="site-navigation">
+      <a href="#">Каталог товаров</a>
+      <ul class="main-catalog visually-hidden">
         <li>
-          <a href="#">Каталог товаров</a>
-          <ul class="main-catalog visually-hidden">
-            <li>
-              <a href="#">Виртуальная реальность</a>
-            </li>
-            <li>
-              <a href="#">Моноподы для селфи</a>
-            </li>
-            <li>
-              <a href="#">Экшн-камеры</a>
-            </li>
-            <li>
-              <a href="#">Фитнес-браслеты</a>
-            </li>
-            <li>
-              <a href="#">Умные часы</a>
-            </li>
-            <li>
-              <a href="#">Квадрокоптеры</a>
-            </li>
-          </ul>
+          <a href="#">Виртуальная реальность</a>
         </li>
+        <li>
+          <a href="#">Моноподы для селфи</a>
+        </li>
+        <li>
+          <a href="#">Экшн-камеры</a>
+        </li>
+        <li>
+          <a href="#">Фитнес-браслеты</a>
+        </li>
+        <li>
+          <a href="#">Умные часы</a>
+        </li>
+        <li>
+          <a href="#">Квадрокоптеры</a>
+        </li>
+      </ul>
+
+      <ul class="site-navigation">
         <li>
           <a href="#">Доставка</a>
         </li>
@@ -70,6 +68,7 @@
 
     </nav>
   </header>
+
   <!-- Main -->
   <main>
     < class="sliders">
@@ -177,7 +176,30 @@
       </section>
 
       <section class="services">
+        <ul class="services__list">
+          <li>Доставка</li>
+          <li>Гарантия</li>
+          <li>Кредит</li>
+        </ul>
 
+        <div class="service visually-hidden">
+          <h3>Доставка</h3>
+          <p>Мы с удовольствием доставим ваш товар прямо к вашему подъезду совершенно бесплатно!
+            Ведь мы неплохо заработаем, поднимая его на ваш этаж.</p>
+          <img src="img/services/delivery.svg" alt="Доставка">
+        </div>
+        <div class="service">
+          <h3>Гарантия</h3>
+          <p>Если из-за возгорания купленного у нас товара у вас сгорит дом - не переживайте, мы
+            выдадим вам новый. Товар, не дом конечно же.</p>
+          <img src="img/services/warranty.svg" alt="Гарантия">
+        </div>
+        <div class="service visually-hidden">
+          <h3>Кредит</h3>
+          <p>Залезть в долговую яму стало проще! Кредитные консультанты подберут для вас наиболее
+            выгодные условия кредита. Выгодные для нашего банка разумеется.</p>
+          <img src="img/services/credit.svg" alt="Кредит">
+        </div>
       </section>
 
       <section class="logotypes">
@@ -246,8 +268,52 @@
         </section>
       </section>
   </main>
+
   <!-- Footer -->
   <footer>
+    <img src="img/header/device.svg" alt="Логотип" class="logo">
+
+    <ul class="footer-content">
+      <li>
+        <ul class="user-navigation">
+          <li>
+            <a href="#">Вход</a>
+          </li>
+        </ul>
+      </li>
+      <li>
+        <a href="compare.html">Сравнить</a>
+      </li>
+      <li>
+        <a href="card.html">Корзина</a>
+      </li>
+    </ul>
+
+    <p>г. Москва, ул. Строителей, 15</p>
+
+    <ul class="site-navigation">
+      <li>
+        <a href="#">Доставка</a>
+      </li>
+      <li>
+        <a href="#">Гарантия</a>
+      </li>
+      <li>
+        <a href="#">Контакты</a>
+      </li>
+    </ul>
+
+    <p>Тел.: +7(495)495-95-95</p>
+
+    <div class="empty"></div>
+
+    <div class="footer__social">
+      <a href="#" class="social__button">VKontakte</a>
+      <a href="#" class="social__button">Facebook</a>
+      <a href="#" class="social__button">Intagram</a>
+    </div>
+
+    <a class="copyright" href="https://htmlacademy.ru"></a>
 
   </footer>
 </body>
