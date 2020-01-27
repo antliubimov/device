@@ -81,10 +81,10 @@
 
     <section class="filters">
       <h3>Фильтр:</h3>
-      <form action="URL">
+      <form action="https://echo.htmlacademy.ru" method="post">
         <fieldset>
           <legend>Стоимость</legend>
-          <input type="range" name="costs" id="value">
+          <input type="range" name="value" id="value">
         </fieldset>
 
         <fieldset>
@@ -109,6 +109,7 @@
           <label for="no_has">Нет</label>
         </fieldset>
       </form>
+      <button class="button" type="submit">Показать</button>
     </section>
 
     <section class="sorting">
@@ -118,8 +119,8 @@
         <li class="sorting__item">По типу</li>
         <li class="sorting__item">По популярности</li>
       </ul>
-      <button class="sorting__low"></button>
-      <button class="sorting__high"></button>
+      <button class="sorting__low">Сортировка по возрастанию</button>
+      <button class="sorting__high">Сортировка по убыванию</button>
     </section>
 
     <section class="catalog">

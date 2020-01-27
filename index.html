@@ -247,6 +247,7 @@
         </ul>
         <a href="#" class="btn">Подробнее о нас</a>
       </section>
+
       <section class="info__contacts">
         <h3>Контакты</h3>
         <p>Вы можете забрать товар сами, заехав в наш офис. Заодно, вы сможете проверить
@@ -254,26 +255,11 @@
         <a>
           <img src="img/contact/map.jpg" alt="Карта">
         </a>
-        <div class="map__popup visually-hidden">
-          <img src="img/contact/map-big.jpg" alt="Карта">
-          <button class="popup__close"></button>
-        </div>
         <button class="btn write">Напишите нам</button>
-
-        <div class="write_us">
-          <button class="popup__close"></button>
-          <form class="visually-hidden" action="URL" method="post">
-            <label for="name">Ваше имя:</label>
-            <input id="name" type="text">
-            <label for="email">Ваш e-mail:</label>
-            <input id="email" type="email">
-            <label for="message"></label>
-            <textarea name="message" id="message" cols="30" rows="10"></textarea>
-            <input class="btn" type="submit" value="Отправить">
-          </form>
-        </div>
       </section>
+
     </section>
+
   </main>
 
   <!-- Footer -->
@@ -321,8 +307,32 @@
     </div>
 
     <a class="copyright" href="https://htmlacademy.ru"></a>
-
   </footer>
+
+  <section class="modal modal__write_us">
+    <h2 class="visiually-hidden">Форма отправки сообщения</h2>
+    <form class="visually-hidden" action="URL" method="post">
+      <label for="name">Ваше имя:</label>
+      <input id="name" type="text" placeholder="Имя Фамилия">
+      <label for="email">Ваш e-mail:</label>
+      <input id="email" type="email" placeholder="email@example.com">
+      <label for="message">Текст письма:</label>
+      <textarea name="message" id="message" cols="30" rows="10"
+        placeholder="В свободной форме"></textarea>
+      <button class="btn" type="submit">Отправить</button>
+    </form>
+    <button class="modal__close" type="button">Закрыть</button>
+  </section>
+
+  <section class="modal__map visually-hidden">
+    <h2 class="visually-hidden">Как до нас добраться</h2>
+    <div>
+      <img src="img/contact/map-big.jpg" width="960" height="560"
+        alt="Офис компании по адресу ул. Строителей 15, Москва">
+      <button class="modal__close">Закрыть</button>
+    </div>
+  </section>
+
 </body>
 
 </html>
