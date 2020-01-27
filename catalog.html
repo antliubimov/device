@@ -19,8 +19,11 @@
       <ul class="main-content">
         <li>
           <ul class="user-navigation">
+            <li class="login__link">
+              <a href="user.html">Валентин Петухов</a>
+            </li>
             <li>
-              <a href="#">Вход</a>
+              <a href="logout.html" class="logout">Выйти</a>
             </li>
           </ul>
         </li>
@@ -56,7 +59,7 @@
 
       <ul class="site-navigation">
         <li>
-          <a href="#">Доставка</a>
+          <a href="">Доставка</a>
         </li>
         <li>
           <a href="#">Гарантия</a>
@@ -89,24 +92,38 @@
 
         <fieldset>
           <legend>Цвет</legend>
-          <input type="checkbox" name="black" id="black">
-          <label for="black">Черный</label>
-          <input type="checkbox" name="black" id="white">
-          <label for="white">Белый</label>
-          <input type="checkbox" name="black" id="blue">
-          <label for="blue">Синий</label>
-          <input type="checkbox" name="black" id="red">
-          <label for="red">Красный</label>
-          <input type="checkbox" name="black" id="pink">
-          <label for="pink">Розовый</label>
+          <p>
+            <input type="checkbox" name="black" id="black" checked>
+            <label for="black">Черный</label>
+          </p>
+          <p>
+            <input type="checkbox" name="white" id="white">
+            <label for="white">Белый</label>
+          </p>
+          <p>
+            <input type="checkbox" name="blue" id="blue" checked>
+            <label for="blue">Синий</label>
+          </p>
+          <p>
+            <input type="checkbox" name="red" id="red" checked>
+            <label for="red">Красный</label>
+          </p>
+          <p>
+            <input type="checkbox" name="pink" id="pink">
+            <label for="pink">Розовый</label>
+          </p>
         </fieldset>
 
         <fieldset>
           <legend>Bluetooth</legend>
-          <input type="radio" name="has" id="has">
-          <label for="has">Есть</label>
-          <input type="radio" name="no_has" id="no_has">
-          <label for="no_has">Нет</label>
+          <p>
+            <input type="radio" name="bluetooth" id="has" checked>
+            <label for="has">Есть</label>
+          </p>
+          <p>
+            <input type="radio" name="bluetooth" id="no_has">
+            <label for="no_has">Нет</label>
+          </p>
         </fieldset>
       </form>
       <button class="button" type="submit">Показать</button>
@@ -114,13 +131,36 @@
 
     <section class="sorting">
       <h3>Сортировка</h3>
-      <ul class="sorting__list">
-        <li class="sorting__item">По цене</li>
-        <li class="sorting__item">По типу</li>
-        <li class="sorting__item">По популярности</li>
+      <ul class="sort__list">
+        <li class="sort__item">
+          <input type="radio" name="sort" id="" class="visually-hidden" value="price"
+            id="sort__price">
+          <label for="sort__price">По цене</label>
+        </li>
+        <li class="sort__item">
+          <input type="radio" name="sort" id="" class="visually-hidden" value="type"
+            id="sort__typee">
+          <label for="sort__type">По типу</label>
+        </li>
+        <li class="sort__item">
+          <input type="radio" name="sort" id="" class="visually-hidden" value="popular"
+            id="sort__popular">
+          <label for="sort__popular">По популярности</label>
+        </li>
       </ul>
-      <button class="sorting__low">Сортировка по возрастанию</button>
-      <button class="sorting__high">Сортировка по убыванию</button>
+
+      <ul class="sorting__list">
+        <li class="sorting__item">
+          <input type="radio" class="visually-hidden" name="sorting" value="low" id="sorting__low">
+          <label for="sorting__low">Сортировка по возрастанию</label>
+        </li>
+        <li class="sorting__item">
+          <input type="radio" class="visually-hidden" name="sorting" value="high"
+            id="sorting__high">
+          <label for="sorting__high">Сортировка по возрастанию</label>
+        </li>
+      </ul>
+
     </section>
 
     <section class="catalog">
@@ -221,8 +261,11 @@
     <ul class="footer-content">
       <li>
         <ul class="user-navigation">
+          <li class="login__link">
+            <a href="user.html">Валентин Петухов</a>
+          </li>
           <li>
-            <a href="#">Вход</a>
+            <a href="logout.html" class="logout">Выйти</a>
           </li>
         </ul>
       </li>
@@ -238,13 +281,13 @@
 
     <ul class="site-navigation">
       <li>
-        <a href="#">Доставка</a>
+        <a href="delivery.html">Доставка</a>
       </li>
       <li>
-        <a href="#">Гарантия</a>
+        <a href="warranty.html">Гарантия</a>
       </li>
       <li>
-        <a href="#">Контакты</a>
+        <a href="contacts.html">Контакты</a>
       </li>
     </ul>
 
