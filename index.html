@@ -19,8 +19,8 @@
       <ul class="main-content">
         <li>
           <ul class="user-navigation">
-            <li>
-              <a href="#">Вход</a>
+            <li class="login__link">
+              <a class="login__link" href="login.html">Вход</a>
             </li>
           </ul>
         </li>
@@ -269,8 +269,8 @@
     <ul class="footer-content">
       <li>
         <ul class="user-navigation">
-          <li>
-            <a href="#">Вход</a>
+          <li class="login__link">
+            <a class="login__link" href="login.html">Вход</a>
           </li>
         </ul>
       </li>
@@ -286,13 +286,13 @@
 
     <ul class="site-navigation">
       <li>
-        <a href="#">Доставка</a>
+        <a href="delivery.html">Доставка</a>
       </li>
       <li>
-        <a href="#">Гарантия</a>
+        <a href="warranty.html">Гарантия</a>
       </li>
       <li>
-        <a href="#">Контакты</a>
+        <a href="contacts.html">Контакты</a>
       </li>
     </ul>
 
@@ -311,14 +311,20 @@
 
   <section class="modal modal__write_us">
     <h2 class="visiually-hidden">Форма отправки сообщения</h2>
-    <form class="visually-hidden" action="URL" method="post">
-      <label for="name">Ваше имя:</label>
-      <input id="name" type="text" placeholder="Имя Фамилия">
-      <label for="email">Ваш e-mail:</label>
-      <input id="email" type="email" placeholder="email@example.com">
-      <label for="message">Текст письма:</label>
-      <textarea name="message" id="message" cols="30" rows="10"
-        placeholder="В свободной форме"></textarea>
+    <form class="write__form visually-hidden" action="https://echo.htmlacademy.ru" method="post">
+      <p class="write__item">
+        <label for="name">Ваше имя:</label>
+        <input id="name" type="text" placeholder="Имя Фамилия">
+      </p>
+      <p class="write__item">
+        <label for="email">Ваш e-mail:</label>
+        <input id="email" type="email" placeholder="email@example.com">
+      </p>
+      <p class="write__item">
+        <label for="message">Текст письма:</label>
+        <textarea name="message" id="message" cols="30" rows="10"
+          placeholder="В свободной форме"></textarea>
+      </p>
       <button class="btn" type="submit">Отправить</button>
     </form>
     <button class="modal__close" type="button">Закрыть</button>
