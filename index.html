@@ -5,75 +5,79 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <meta http-equiv="X-UA-Compatible" content="ie=edge">
-  <title>Device</title>
+  <title>Интернет-магазин Device</title>
+  <link rel="stylesheet" href="css/normalize.css">
+  <link rel="stylesheet" href="css/style.css">
 </head>
 
 <body>
   <!-- Header -->
   <header class="main-header">
-    <div class="main-header__row">
-      <a href="index.html" class="main-header__logo">
-        <img src="/img/header/device.svg" alt="Логотип магазина Device">
-      </a>
-    </div>
-    <div class="main-header__row">
-      <p>
-        <input type="search" class="user-search" id="search" placeholder="Поиск по сайту">
-        <label for="search" class="visually-hidden">Поиск по сайту</label>
-      </p>
-      <ul class="user-menu">
-        <li>
-          <ul class="user-menu__login">
-            <li class="login__link">
-              <a class="login__link" href="#">Вход</a>
-            </li>
-          </ul>
-        </li>
-        <li>
-          <a href="#">Сравнить</a>
-        </li>
-        <li>
-          <a href="#">Корзина</a>
-        </li>
-      </ul>
-    </div>
-    <div class="main-header__row">
-      <ul class="site-menu">
-        <li>
-          <button class="main-catalog__button" type="button" href="#">Каталог товаров</button>
-        </li>
-        <li>
-          <a href="#">Доставка</a>
-        </li>
-        <li>
-          <a href="#">Гарантия</a>
-        </li>
-        <li>
-          <a href="#">Контакты</a>
-        </li>
-      </ul>
-    </div>
-    <div class="main-header__row">
-      <ul class="main-catalog__list visually-hidden">
-        <li>
-          <a href="#">Виртуальная реальность</a>
-        </li>
-        <li>
-          <a href="#">Моноподы для селфи</a>
-        </li>
-        <li>
-          <a href="#">Экшн-камеры</a>
-        </li>
-        <li>
-          <a href="#">Фитнес-браслеты</a>
-        </li>
-        <li>
-          <a href="#">Умные часы</a>
-        </li>
-        <li>
-          <a href="#">Квадрокоптеры</a>
-        </li>
-      </ul>
+    <div class="main-header__container">
+      <div class="main-header__logotype">
+        <a href="index.html" class="main-header__logo">
+          <img src="/img/header/device.svg" alt="Логотип магазина Device">
+        </a>
+      </div>
+      <div class="main-header__user-menu">
+        <p>
+          <input type="search" class="user-search" id="search" placeholder="Поиск по сайту">
+          <label for="search" class="visually-hidden">Поиск по сайту</label>
+        </p>
+        <ul class="user-menu">
+          <li>
+            <ul class="user-menu__login">
+              <li class="login__link">
+                <a class="login__link" href="#">Вход</a>
+              </li>
+            </ul>
+          </li>
+          <li>
+            <a href="#">Сравнить</a>
+          </li>
+          <li>
+            <a href="#">Корзина</a>
+          </li>
+        </ul>
+      </div>
+      <div class="main-header__site-menu">
+        <ul class="site-menu">
+          <li>
+            <a class="main-catalog__button" href="#main-catalog__list">Каталог товаров</a>
+          </li>
+          <li>
+            <a href="#">Доставка</a>
+          </li>
+          <li>
+            <a href="#">Гарантия</a>
+          </li>
+          <li>
+            <a href="#">Контакты</a>
+          </li>
+        </ul>
+      </div>
+      <div class="main-header__catalog">
+        <ul class="main-catalog__list visually-hidden" id="main-catalog__list">
+          <li>
+            <a href="#">Виртуальная реальность</a>
+          </li>
+          <li>
+            <a href="#">Моноподы для селфи</a>
+          </li>
+          <li>
+            <a href="#">Экшн-камеры</a>
+          </li>
+          <li>
+            <a href="#">Фитнес-браслеты</a>
+          </li>
+          <li>
+            <a href="#">Умные часы</a>
+          </li>
+          <li>
+            <a href="#">Квадрокоптеры</a>
+          </li>
+        </ul>
+      </div>
     </div>
   </header>
 
@@ -157,37 +161,49 @@
       <ul class="popular__list">
         <li class="popular__item">
           <a href="catalog.html">
-            <img src="img/popular/popular-1.svg" alt="Виртуальная реальность">
+            <div>
+              <img src="img/popular/popular-1.svg" alt="Виртуальная реальность">
+            </div>
             <p>Виртуальная реальность</p>
           </a>
         </li>
         <li class="popular__item">
           <a href="catalog.html">
-            <img src="img/popular/popular-2.svg" alt="Моноподы для селфи">
+            <div>
+              <img src="img/popular/popular-2.svg" alt="Моноподы для селфи">
+            </div>
             <p>Моноподы для селфи</p>
           </a>
         </li>
         <li class="popular__item">
           <a href="catalog.html">
-            <img src="img/popular/popular-3.svg" alt="Экшн-камеры">
+            <div>
+              <img src="img/popular/popular-3.svg" alt="Экшн-камеры">
+            </div>
             <p>Экшн-камеры</p>
           </a>
         </li>
         <li class="popular__item">
           <a href="catalog.html">
-            <img src="img/popular/popular-4.svg" alt="Фитнес-браслеты">
+            <div>
+              <img src="img/popular/popular-4.svg" alt="Фитнес-браслеты">
+            </div>
             <p>Фитнес-браслеты</p>
           </a>
         </li>
         <li class="popular__item">
           <a href="catalog.html">
-            <img src="img/popular/popular-5.svg" alt="Умные часы">
+            <div>
+              <img src="img/popular/popular-5.svg" alt="Умные часы">
+            </div>
             <p>Умные часы</p>
           </a>
         </li>
         <li class="popular__item">
           <a href="catalog.html">
-            <img src="img/popular/popular-6.svg" alt="Квадрокоптеры">
+            <div>
+              <img src="img/popular/popular-6.svg" alt="Квадрокоптеры">
+            </div>
             <p>Квадрокоптеры</p>
           </a>
         </li>
@@ -196,11 +212,21 @@
 
     <section class="services">
       <h2 class="visually-hidden">Сервисы</h2>
-      <ul class="services__list">
-        <li>Доставка</li>
-        <li>Гарантия</li>
-        <li>Кредит</li>
-      </ul>
+      <div class="service__list">
+        <label for="delivery" class="btn btn__service btn__service--checked"><input
+            class="visually-hidden" type="radio" name="service" id="delivery" value="delivery"
+            checked>Доставка</label>
+
+        <label for="warranty" class="btn btn__service">
+          <input class="visually-hidden" type="radio" name="service" id="warranty" value="warranty">
+          Гарантия
+        </label>
+
+        <label for="credit" class="btn btn__service">
+          <input class="visually-hidden" type="radio" name="service" id="credit" value="credit">
+          Кредит
+        </label>
+      </div>
 
       <div class="service current-service">
         <h3>Доставка</h3>
@@ -208,7 +234,7 @@
           Ведь мы неплохо заработаем, поднимая его на ваш этаж.</p>
         <img src="img/services/delivery.svg" alt="Доставка">
       </div>
-      <div class="service visiually-hidden">
+      <div class="service visually-hidden">
         <h3>Гарантия</h3>
         <p>Если из-за возгорания купленного у нас товара у вас сгорит дом - не переживайте, мы
           выдадим вам новый. Товар, не дом конечно же.</p>
@@ -270,7 +296,7 @@
         <a>
           <img src="img/contact/map.jpg" alt="Офис компании по адресу ул. Строителей 15, Москва">
         </a>
-        <button class="btn write">Напишите нам</button>
+        <button class="btn btn__write">Напишите нам</button>
       </section>
 
     </section>
@@ -278,9 +304,9 @@
   </main>
 
   <!-- Footer -->
-  <footer>
+  <footer class="main-footer">
     <div class="footer__column">
-      <a href="index.html" class="main-header__logo">
+      <a href="index.html" class="main-footer__logo">
         <img src="/img/header/device.svg" alt="Логотип магазина Device">
       </a>
       <p>г. Москва, ул. Строителей, 15</p>
@@ -300,7 +326,7 @@
         </li>
       </ul>
 
-      <div class="social__buttons">
+      <ul class="social__buttons">
         <li>
           <a href="#" class="social__button social__button--facebook">Facebook</a>
         </li>
@@ -310,7 +336,7 @@
         <li>
           <a href="#" class="social__button social__button--twitter">Twitter</a>
         </li>
-      </div>
+      </ul>
     </div>
 
     <div class="footer__column">
@@ -352,7 +378,7 @@
         <textarea name="message" id="message" cols="30" rows="10"
           placeholder="В свободной форме"></textarea>
       </p>
-      <button class="btn" type="submit">Отправить</button>
+      <button class="btn btn__submit" type="submit">Отправить</button>
     </form>
     <button class="modal__close" type="button">Закрыть</button>
   </section>

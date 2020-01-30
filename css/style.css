@@ -1,0 +1,299 @@
+@font-face {
+  font-family: 'Open Sans';
+  src: url('../fonts/opensans.woff2') format('woff2'),
+    url('../fonts/opensans.woff') format('woff');
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'Open Sans Light';
+  src: url('../fonts/opensanslight.woff2') format('woff2'),
+    url('../fonts/opensanslight.woff') format('woff');
+  font-weight: 300;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'Gilroy ExtraBold';
+  src: url('../fonts/gilroyextrabold.woff2') format('woff2'),
+    url('../fonts/gilroyextrabold.woff') format('woff');
+  font-weight: 900;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'Gilroy Light';
+  src: url('../fonts/gilroylight.woff2') format('woff2'),
+    url('../fonts/gilroylight.woff') format('woff');
+  font-weight: lighter;
+  font-style: normal;
+}
+
+/* .visually-hidden {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  margin: -1px;
+  border: 0;
+  padding: 0;
+  clip: rect(0 0 0 0);
+  overflow: hidden;
+} */
+
+body {
+  margin: 0;
+  padding: 0;
+
+  font-family: 'Open Sans', Arial, Helvetica, sans-serif;
+  font-size: 15px;
+  line-height: 30px;
+  font-weight: 300;
+  color: #464646;
+
+  background-color: #ffffff;
+}
+
+a {
+  text-decoration: none;
+}
+
+ul {
+  list-style: none;
+}
+
+.btn {
+  position: relative;
+  z-index: 1;
+
+  font-family: 'Gilroy ExtraBold', Arial, Helvetica, sans-serif;
+  font-size: 18px;
+  line-height: 24px;
+  font-weight: 900;
+  text-align: center;
+  vertical-align: middle;
+  text-transform: uppercase;
+  color: #000000;
+  letter-spacing: 3.6px;
+
+  transition: 0.3s;
+}
+
+.btn:hover,
+.btn:focus,
+.btn:active {
+  background-color: #f0c52e;
+}
+
+.btn:active {
+  color: rgba(0, 0, 0, 0.3);
+}
+
+.btn::before {
+  content: '';
+
+  position: absolute;
+  top: 33.3%;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  z-index: -1;
+
+  width: 100%;
+  margin: 0 auto;
+
+  border-top: 8px solid #f0c52e;
+}
+
+.main-header__container {
+  background-color: #f7e296;
+}
+
+.main-header__user-menu {
+  display: flex;
+}
+
+.main-header a {
+  font: inherit;
+  color: #000000;
+}
+
+.main-header a:hover,
+.main-header a:focus {
+  opacity: 0.6;
+}
+
+.main-header a:active {
+  opacity: 0.3;
+}
+
+.site-menu {
+  display: flex;
+}
+
+.site-menu a {
+  font-family: 'Gilroy ExtraBold', Arial, Helvetica, sans-serif;
+  font-size: 18px;
+  line-height: 24px;
+  font-weight: 900;
+  text-transform: uppercase;
+  letter-spacing: 3.6px;
+}
+
+.main-catalog__list a {
+  line-height: 36px;
+}
+
+.popular__list {
+  display: flex;
+}
+
+.popular__list a {
+  font-family: 'Gilroy ExtraBold', Arial, Helvetica, sans-serif;
+  font-size: 18px;
+  line-height: 24px;
+  font-weight: 900;
+  letter-spacing: 0.18px;
+  color: #000000;
+}
+
+.popular__list div {
+  width: 160px;
+  height: 160px;
+
+  display: flex;
+  justify-content: center;
+
+  background-color: #f7e296;
+}
+
+.popular__list div:hover,
+.popular__list div:focus {
+  background-color: #f0c52e;
+}
+
+.popular__list div:active>img {
+  opacity: 0.3;
+}
+
+.popular__item:nth-child(2) img {
+  align-self: flex-end;
+}
+
+.services {
+  background-color: #e5e5e5;
+}
+
+.service h3 {
+  font-family: 'Gilroy ExtraBold', Arial, Helvetica, sans-serif;
+  font-size: 47px;
+  line-height: 48px;
+  font-weight: 900;
+  letter-spacing: 0.18px;
+  color: #000000;
+}
+
+.btn__service:active,
+.btn__service--checked {
+  color: #f7e184;
+  background-color: #000000;
+}
+
+.logo__list {
+  display: flex;
+
+}
+
+.logo__item {
+  opacity: 0.2;
+  filter: grayscale(100);
+}
+
+.logo__item:hover,
+.logo__item:focus {
+  opacity: 1;
+  filter: grayscale(0);
+}
+
+.info h3 {
+  font-family: 'Gilroy ExtraBold', Arial, Helvetica, sans-serif;
+  font-size: 47px;
+  line-height: 48px;
+  font-weight: 900;
+  letter-spacing: 0.18px;
+  color: #000000;
+}
+
+.transport__item {
+  position: relative;
+
+  font-family: 'Gilroy ExtraBold', Arial, Helvetica, sans-serif;
+  font-size: 16px;
+  line-height: 40px;
+  font-weight: 900;
+  letter-spacing: 0.18px;
+  color: #000000;
+}
+
+.transport__item::before {
+  content: "";
+
+  position: absolute;
+  left: -33px;
+  top: 15px;
+
+  display: block;
+  width: 8px;
+  height: 8px;
+  color: #e5e5e5;
+
+  background-image: url('../img/trans-button.png');
+}
+
+.btn__write {
+  border: none;
+  background: none;
+}
+
+.main-footer {
+
+  color: #ffffff;
+
+  background-color: #464646;
+}
+
+.main-footer a {
+  font: inherit;
+  color: #ffffff;
+}
+
+.main-footer a:hover,
+.main-footer a:focus {
+  opacity: 0.6;
+}
+
+.main-footer a:active {
+  opacity: 0.3;
+}
+
+.main-footer__logo img {
+  /* filter: */
+}
+
+.modal__write_us label {
+  font-family: 'Gilroy ExtraBold', Arial, Helvetica, sans-serif;
+  font-size: 16px;
+  line-height: 40px;
+  font-weight: 900;
+  letter-spacing: 0.18px;
+  color: #000000;
+}
+
+.btn__submit {
+  border: none;
+  background: none;
+}
+
+.modal__map img {
+  box-shadow: 0 10px 20px 0 rgba(0, 0, 0, 0.2);
+}
