@@ -115,6 +115,11 @@ h1 {
 }
 
 .main-header__container {
+  width: 1160px;
+  display: flex;
+  flex-direction: column;
+  margin: 0 auto;
+  padding: 0 60px;
   background-color: #f7e296;
 }
 
@@ -136,17 +141,32 @@ h1 {
   opacity: 0.3;
 }
 
+.site-menu {
+  padding: 0;
+}
+
 .site-menu a {
   display: flex;
 }
 
-.site-menu a {
+.site-menu>li>a {
   font-family: 'Gilroy ExtraBold', Arial, Helvetica, sans-serif;
   font-size: 18px;
   line-height: 24px;
   font-weight: 900;
   text-transform: uppercase;
   letter-spacing: 3.6px;
+}
+
+.main-catalog__list {
+  display: flex;
+  flex-direction: column;
+  width: 600px;
+  padding: 0;
+}
+
+.main-catalog__list li {
+  width: 220px;
 }
 
 .breadcrumbs a {
@@ -174,6 +194,11 @@ h1 {
 
 .popular__list {
   display: flex;
+  justify-content: space-between;
+}
+
+.popular__item {
+  width: 160px;
 }
 
 .popular__list a {
@@ -186,7 +211,7 @@ h1 {
 }
 
 .popular__list div {
-  width: 160px;
+
   height: 160px;
 
   display: flex;
