@@ -54,6 +54,12 @@ body {
   background-color: #ffffff;
 }
 
+.container {
+  width: 1160px;
+  margin: 0 auto;
+  padding: 0 20px;
+}
+
 a {
   text-decoration: none;
 }
@@ -114,17 +120,39 @@ h1 {
   border-top: 8px solid #f0c52e;
 }
 
-.main-header__container {
-  width: 1160px;
+.main-header {
+  padding-top: 40px;
+}
+
+.main-header__logotype-wrap {
+  position: relative;
+}
+
+.main-header__logotype {
+  position: absolute;
+  top: -18px;
+  left: 60px;
+}
+
+.main-header__wrap {
   display: flex;
-  flex-direction: column;
-  margin: 0 auto;
   padding: 0 60px;
+  padding-top: 50px;
+
   background-color: #f7e296;
+}
+
+.main-header__site-menu {
+  width: 540px;
 }
 
 .main-header__user-menu {
   display: flex;
+  width: 280px;
+}
+
+.main-header__other-menu {
+  width: 220px;
 }
 
 .main-header a {
@@ -141,6 +169,10 @@ h1 {
   opacity: 0.3;
 }
 
+.slides {
+  margin-bottom: 100px;
+}
+
 .site-menu {
   padding: 0;
 }
@@ -149,7 +181,7 @@ h1 {
   display: flex;
 }
 
-.site-menu>li>a {
+.main-header .menu-link--bold {
   font-family: 'Gilroy ExtraBold', Arial, Helvetica, sans-serif;
   font-size: 18px;
   line-height: 24px;
@@ -192,9 +224,14 @@ h1 {
   line-height: 36px;
 }
 
+.popular {
+  margin-bottom: 180px;
+}
+
 .popular__list {
   display: flex;
   justify-content: space-between;
+  padding: 0;
 }
 
 .popular__item {
@@ -234,7 +271,26 @@ h1 {
 }
 
 .services {
+  margin-bottom: 95px;
   background-color: #e5e5e5;
+}
+
+.service-wrap {
+  display: flex;
+  align-items: center;
+}
+
+.service__list {
+  display: flex;
+  flex-direction: column;
+
+  width: 280px;
+  margin-right: 120px;
+}
+
+.service {
+
+  width: 700px;
 }
 
 .service h3,
@@ -247,10 +303,16 @@ h1 {
   color: #000000;
 }
 
+
+
 .btn__service:active,
 .btn__service--checked {
   color: #f7e184;
   background-color: #000000;
+}
+
+.logotypes {
+  margin-bottom: 95px;
 }
 
 .logo__list {
@@ -267,6 +329,21 @@ h1 {
 .logo__item:focus {
   opacity: 1;
   filter: grayscale(0);
+}
+
+.info {
+  margin-bottom: 90px;
+}
+
+.info-wrapper {
+  display: flex;
+  justify-content: space-around;
+}
+
+.info__about,
+.info__contacts {
+  width: 560px;
+  margin: 0 20px;
 }
 
 .transport__item {
@@ -421,10 +498,15 @@ h1 {
 }
 
 .main-footer {
-
+  padding: 65px 0;
   color: #ffffff;
 
   background-color: #464646;
+}
+
+.main-footer__wrap {
+  display: flex;
+  justify-content: space-between;
 }
 
 .main-footer a {
