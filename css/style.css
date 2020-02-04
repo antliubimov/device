@@ -55,7 +55,7 @@ body {
 }
 
 .container {
-  width: 1160px;
+  width: 1200px;
   margin: 0 auto;
   padding: 0 20px;
 }
@@ -209,29 +209,40 @@ h1 {
 
 
 .inner-page .main__container {
-  /* display: flex; */
-}
-
-.inner-page .main--left {
   display: flex;
-  width: 100%;
-  min-width: 330px;
-  height: 100%;
-  background: linear-gradient(to right, green 50%, red 50%);
-}
-
-.inner-page .main--right {
-  background-color: #eeeeee;
-}
-
-.inner-page .main--right__wrap {
-  width: 830px;
+  /* flex-wrap: wrap; */
+  padding-left: 60px;
 }
 
 .breadcrumbs {
+  display: flex;
+  justify-content: flex-start;
+  flex-wrap: wrap;
+
   padding: 0;
   margin: 0;
   margin-bottom: 50px;
+}
+
+.breadcrumbs li {
+  position: relative;
+  margin-right: 40px;
+}
+
+.breadcrumbs li::after {
+  content: "";
+  position: absolute;
+  top: 13px;
+  right: -20px;
+  width: 4px;
+  height: 7px;
+
+  background-image: url("../img/nav-arrow.svg");
+  background-repeat: no-repeat;
+}
+
+.breadcrumbs li:last-child {
+  margin-right: 0;
 }
 
 .breadcrumbs a {
@@ -251,6 +262,14 @@ h1 {
 
 .breadcrumbs a:active {
   opacity: 0.1;
+}
+
+.breadcrumbs__current {
+  opacity: 0.3;
+}
+
+.breadcrumbs__current::after {
+  display: none;
 }
 
 .main-catalog__list a {
@@ -336,8 +355,6 @@ h1 {
   color: #000000;
 }
 
-
-
 .btn__service:active,
 .btn__service--checked {
   color: #f7e184;
@@ -412,11 +429,13 @@ h1 {
 
 .filters {
   width: 330px;
+  background-color: #efefef;
 }
+
 
 .filters fieldset {
   border: none;
-  border-bottom: 2px solid #000000;
+  border-top: 2px solid #000000;
 }
 
 .filters legend {
@@ -428,6 +447,8 @@ h1 {
 
 .filters h3,
 .sorting h3 {
+  margin: 0;
+  padding: 0;
   font-family: 'Gilroy ExtraBold', Arial, Helvetica, sans-serif;
   font-size: 16px;
   line-height: 24px;
@@ -437,6 +458,9 @@ h1 {
 }
 
 .filters h3 {
+  padding-top: 23px;
+  padding-bottom: 23px;
+  margin-bottom: 69px;
   background-color: #dcdcdc;
 }
 
@@ -445,8 +469,8 @@ h1 {
   line-height: 40px;
 }
 
-.navigation {
-  background-color: #ebebeb;
+.sorting {
+  background-color: #efefef;
 }
 
 .sorting label {
@@ -459,12 +483,8 @@ h1 {
   opacity: 1;
 }
 
-
-.catalog__wrap {
-  padding: 70px 0 75px 70px;
-}
-
 .catalog {
+  width: 830px;
   margin-bottom: 40px;
 }
 
@@ -497,8 +517,13 @@ h1 {
   color: #000000;
 }
 
+.navigation {}
+
 .navigation {
   width: 760px;
+
+  background-color: #ebebeb;
+
 }
 
 .navigation__list li {
