@@ -473,14 +473,26 @@ h1 {
 }
 
 .filters {
-  width: 330px;
+  width: 200px;
+  padding-left: 60px;
+  padding-right: 70px;
   background-color: #efefef;
+  background-size: unset;
+  overflow: visible;
 }
 
+.filters::before {
+  content: "";
+  position: absolute;
+  width: 100%;
+  left: -450px;
+  height: 30px;
+  background-color: red;
+}
 
 .filters fieldset {
   border: none;
-  border-top: 2px solid #000000;
+
 }
 
 .filters legend {
@@ -529,7 +541,8 @@ h1 {
 }
 
 .catalog {
-  width: 830px;
+  width: 760px;
+  padding-left: 70px;
   margin-bottom: 40px;
 }
 
@@ -562,20 +575,20 @@ h1 {
   color: #000000;
 }
 
-.navigation {}
+.pagination {}
 
-.navigation {
+.pagination {
   width: 760px;
 
   background-color: #ebebeb;
 
 }
 
-.navigation__list li {
+.pagination__list li {
   display: inline-block;
 }
 
-.navigation a {
+.pagination a {
   font-family: 'Gilroy ExtraBold', Arial, Helvetica, sans-serif;
   font-size: 16px;
   line-height: 24px;
@@ -585,12 +598,12 @@ h1 {
   color: #000000;
 }
 
-.navigation__page {
+.pagination__page {
   opacity: 0.3;
 }
 
-.navigation__page:hover,
-.navigation__page:focus {
+.pagination__page:hover,
+.pagination__page:focus {
   opacity: 1;
 }
 
@@ -598,15 +611,15 @@ h1 {
   opacity: 1;
 }
 
-.navigation .btn-next:hover,
-.navigation .btn-next:focus,
-.navigation .btn-back:hover,
-.navigation .btn-back:focus {
+.pagination .btn-next:hover,
+.pagination .btn-next:focus,
+.pagination .btn-back:hover,
+.pagination .btn-back:focus {
   background-color: #d9d9d9;
 }
 
-.navigation .btn-next:active>span,
-.navigation .btn-back:active>span {
+.pagination .btn-next:active>span,
+.pagination .btn-back:active>span {
   background-color: #d9d9d9;
   opacity: 0.3;
 }
