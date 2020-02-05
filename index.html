@@ -14,6 +14,7 @@
   <!-- Header -->
   <header class="main-header">
     <div class="container">
+
       <div class="main-header__logotype-wrap">
         <div class="main-header__logotype">
           <a href="index.html" class="main-header__logo">
@@ -22,13 +23,40 @@
         </div>
       </div>
 
-      <div class="main-header__wrap">
-        <div class="main-header__site-menu">
-          <p>
+      <div class="main-header__container">
+        <div class="main-header__row">
+          <div class="main-header__search">
             <input type="search" class="user-search" id="search" placeholder="Поиск по сайту">
-            <label for="search" class="visually-hidden">Поиск по сайту</label>
-          </p>
-          <ul class="site-menu">
+            <label for="search" class="visually-hidden">Найти</label>
+          </div>
+
+          <ul class="user-menu">
+            <li>
+              <ul class="user-menu__login">
+                <li class="login__in">
+                  <a href="#">Валентин Петухов</a>
+                </li>
+                <li class="login__out">
+                  <a href="#">Выйти</a>
+                </li>
+              </ul>
+            </li>
+
+            <li>
+              <ul class="user-menu__other">
+                <li>
+                  <a href="#">Сравнить</a>
+                </li>
+                <li>
+                  <a href="#">Корзина</a>
+                </li>
+              </ul>
+            </li>
+          </ul>
+        </div>
+
+        <div class="main-header__row">
+          <ul class="catalog-menu">
             <li>
               <a class="main-catalog__button menu-link--bold" href="#main-catalog__list">Каталог
                 товаров</a>
@@ -54,36 +82,24 @@
               </ul>
             </li>
           </ul>
-        </div>
 
-        <div class="main-header__user-menu">
-          <ul class="user-menu">
+          <ul class="site-menu">
             <li>
-              <ul class="user-menu__login">
-                <li class="login__link">
-                  <a class="login__link" href="#">Войти</a>
+              <ul class="site-menu__dg">
+                <li>
+                  <a class="menu-link--bold" href="#">Доставка</a>
+                </li>
+                <li>
+                  <a class="menu-link--bold" href="#">Гарантия</a>
                 </li>
               </ul>
             </li>
             <li>
-              <a class="menu-link--bold" href="#">Доставка</a>
-            </li>
-            <li>
-              <a class="menu-link--bold" href="#">Гарантия</a>
-            </li>
-          </ul>
-        </div>
-
-        <div class="main-header__other-menu">
-          <ul>
-            <li>
-              <a href="#">Сравнить</a>
-            </li>
-            <li>
-              <a href="#">Корзина</a>
-            </li>
-            <li>
-              <a class="menu-link--bold" href="#">Контакты</a>
+              <ul class="site-menu__contacts">
+                <li>
+                  <a class="menu-link--bold" href="#">Контакты</a>
+                </li>
+              </ul>
             </li>
           </ul>
         </div>

@@ -55,7 +55,7 @@ body {
 }
 
 .container {
-  width: 1200px;
+  width: 1160px;
   margin: 0 auto;
   padding: 0 20px;
 }
@@ -126,37 +126,6 @@ h1 {
   padding-top: 40px;
 }
 
-.main-header__logotype-wrap {
-  position: relative;
-}
-
-.main-header__logotype {
-  position: absolute;
-  top: -18px;
-  left: 60px;
-}
-
-.main-header__wrap {
-  display: flex;
-  padding: 0 60px;
-  padding-top: 50px;
-
-  background-color: #f7e296;
-}
-
-.main-header__site-menu {
-  width: 540px;
-}
-
-.main-header__user-menu {
-  display: flex;
-  width: 280px;
-}
-
-.main-header__other-menu {
-  width: 220px;
-}
-
 .main-header a {
   font: inherit;
   color: #000000;
@@ -171,16 +140,81 @@ h1 {
   opacity: 0.3;
 }
 
-.slides {
-  margin-bottom: 100px;
+.main-header__logotype-wrap {
+  position: relative;
+}
+
+.main-header__logotype {
+  position: absolute;
+  top: -18px;
+  left: 60px;
+}
+
+.main-header__container {
+  padding: 0 60px;
+  padding-top: 45px;
+  background-color: #f7e296;
+}
+
+.main-header__row {
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 30px;
+}
+
+.main-header__search {
+  width: 520px;
+  margin-right: 20px;
+}
+
+.user-menu {
+  display: flex;
+  width: 500px;
+}
+
+.user-menu__login,
+.user-menu__other {
+  display: flex;
+}
+
+.user-menu__login {
+  width: 260px;
+  margin-right: 20px;
+}
+
+.user-menu__login li:not(:last-child) {
+  margin-right: 20px;
+}
+
+.user-menu__other {
+  justify-content: space-between;
+  width: 220px;
+}
+
+.catalog-menu {
+  width: 500px;
 }
 
 .site-menu {
-  padding: 0;
+  display: flex;
+  justify-content: space-between;
+  width: 500px;
 }
 
-.site-menu a {
+.site-menu__dg {
   display: flex;
+  width: 260px;
+  margin-right: 20px;
+}
+
+.site-menu__dg li:not(:last-child) {
+  margin-right: 35px;
+}
+
+.site-menu__contacts {
+  display: flex;
+  justify-content: flex-end;
+  width: 220px;
 }
 
 .main-header .menu-link--bold {
@@ -202,6 +236,14 @@ h1 {
 .main-catalog__list li {
   width: 220px;
 }
+
+
+
+.slides {
+  margin-bottom: 100px;
+}
+
+
 
 .inner-page .main__wrap {
   padding-left: 60px;
