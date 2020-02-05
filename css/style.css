@@ -2,12 +2,12 @@
   font-family: 'Open Sans';
   src: url('../fonts/opensans.woff2') format('woff2'),
     url('../fonts/opensans.woff') format('woff');
-  font-weight: normal;
+  font-weight: 400;
   font-style: normal;
 }
 
 @font-face {
-  font-family: 'Open Sans Light';
+  font-family: 'Open Sans';
   src: url('../fonts/opensanslight.woff2') format('woff2'),
     url('../fonts/opensanslight.woff') format('woff');
   font-weight: 300;
@@ -18,7 +18,7 @@
   font-family: 'Gilroy ExtraBold';
   src: url('../fonts/gilroyextrabold.woff2') format('woff2'),
     url('../fonts/gilroyextrabold.woff') format('woff');
-  font-weight: 900;
+  font-weight: 800;
   font-style: normal;
 }
 
@@ -26,11 +26,11 @@
   font-family: 'Gilroy Light';
   src: url('../fonts/gilroylight.woff2') format('woff2'),
     url('../fonts/gilroylight.woff') format('woff');
-  font-weight: lighter;
+  font-weight: 300;
   font-style: normal;
 }
 
-/* .visually-hidden {
+.visually-hidden {
   position: absolute;
   width: 1px;
   height: 1px;
@@ -39,7 +39,7 @@
   padding: 0;
   clip: rect(0 0 0 0);
   overflow: hidden;
-} */
+}
 
 body {
   margin: 0;
@@ -146,20 +146,21 @@ h1 {
 
 .main-header__logotype {
   position: absolute;
-  top: -18px;
+  top: -16px;
   left: 60px;
 }
 
 .main-header__container {
   padding: 0 60px;
   padding-top: 45px;
+  padding-bottom: 10px;
   background-color: #f7e296;
 }
 
 .main-header__row {
   display: flex;
   justify-content: space-between;
-  margin-bottom: 30px;
+  margin-bottom: 35px;
 }
 
 .main-header__search {
@@ -215,9 +216,11 @@ h1 {
   display: flex;
   justify-content: flex-end;
   width: 220px;
+  padding-left: 5px;
 }
 
-.main-header .menu-link--bold {
+.catalog-menu .menu-link--bold,
+.site-menu .menu-link--bold {
   font-family: 'Gilroy ExtraBold', Arial, Helvetica, sans-serif;
   font-size: 18px;
   line-height: 24px;
@@ -627,7 +630,9 @@ h1 {
 }
 
 .main-footer {
-  padding: 65px 0;
+  padding-top: 65px;
+  padding-bottom: 65px;
+
   color: #ffffff;
 
   background-color: #464646;
@@ -637,6 +642,91 @@ h1 {
   display: flex;
   justify-content: space-between;
 }
+
+.main-footer__column-one {
+  position: relative;
+  width: 260px;
+}
+
+.main-footer__logo img {
+  margin-bottom: 40px;
+}
+
+.main-footer__column-one p {
+  margin: 0;
+  margin-bottom: 50px;
+}
+
+.main-footer__column-one::after {
+  content: "";
+  position: absolute;
+  width: 80px;
+  height: 7px;
+
+  background-color: #ffc600;
+}
+
+.main-footer__column-two {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 640px;
+  margin-right: 60px;
+}
+
+.main-footer .user-menu__login {
+  align-self: flex-end;
+  margin-bottom: 35px;
+}
+
+.main-footer .site-menu {
+  width: 440px;
+  margin-bottom: 60px;
+}
+
+.social__buttons {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+}
+
+.social__buttons li {
+  margin-right: 23px;
+}
+
+.social__buttons li:last-child {
+  margin-right: 0;
+}
+
+.main-footer__column-three {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-end;
+  width: 200px;
+}
+
+.main-footer__column-three p {
+  margin: 0;
+}
+
+.main-footer__column-three p:not(last-child) {
+  margin-bottom: 50px;
+}
+
+.main-footer__user-menu {
+  margin-bottom: 40px;
+}
+
+.main-footer__user-menu li{
+  display: inline-block;
+}
+
+.main-footer__user-menu li:not(:last-child) {
+  margin-right: 60px;
+}
+
+
 
 .main-footer a {
   color: #ffffff;
@@ -651,9 +741,6 @@ h1 {
   opacity: 0.3;
 }
 
-.main-footer__logo img {
-  /* filter: */
-}
 
 .modal__write_us label {
   font-family: 'Gilroy ExtraBold', Arial, Helvetica, sans-serif;
