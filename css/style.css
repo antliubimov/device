@@ -71,6 +71,8 @@ ul {
 }
 
 h1 {
+  padding: 0;
+  margin: 0;
   font-family: 'Gilroy ExtraBold', Arial, Helvetica, sans-serif;
   font-size: 47px;
   line-height: 48px;
@@ -82,6 +84,7 @@ h1 {
 .btn {
   position: relative;
   z-index: 1;
+  padding: 8px 0;
 
   font-family: 'Gilroy ExtraBold', Arial, Helvetica, sans-serif;
   font-size: 18px;
@@ -110,7 +113,7 @@ h1 {
   content: '';
 
   position: absolute;
-  top: 33.3%;
+  top: 40%;
   left: 0;
   right: 0;
   bottom: 0;
@@ -122,8 +125,9 @@ h1 {
   border-top: 8px solid #f0c52e;
 }
 
-.main-header {
+.inner-page .main-header {
   padding-top: 40px;
+  margin-bottom: 40px;
 }
 
 .main-header a {
@@ -229,33 +233,32 @@ h1 {
   letter-spacing: 3.6px;
 }
 
-.main-catalog__list {
+.catalog-menu__list {
   display: flex;
   flex-direction: column;
   width: 600px;
   padding: 0;
 }
 
-.main-catalog__list li {
+.catalog-menu__list li {
   width: 220px;
 }
-
-
 
 .slides {
   margin-bottom: 100px;
 }
-
-
 
 .inner-page .main__wrap {
   padding-left: 60px;
 }
 
 
+.inner-page .main__wrap h1 {
+  margin-bottom: 20px;
+}
+
 .inner-page .main__container {
   display: flex;
-  /* flex-wrap: wrap; */
   padding-left: 60px;
 }
 
@@ -266,7 +269,7 @@ h1 {
 
   padding: 0;
   margin: 0;
-  margin-bottom: 50px;
+  margin-bottom: 40px;
 }
 
 .breadcrumbs li {
@@ -317,7 +320,7 @@ h1 {
   display: none;
 }
 
-.main-catalog__list a {
+.catalog-menu__list a {
   line-height: 36px;
 }
 
@@ -472,6 +475,8 @@ h1 {
   background: none;
 }
 
+/* Inner Page */
+
 .main-catalog {
   position: relative;
 }
@@ -479,7 +484,7 @@ h1 {
 .main-catalog::before {
   content: "";
   position: absolute;
-  top: 160px;
+  top: 138px;
   z-index: -1;
   height: 70px;
   width: 100vw;
@@ -489,7 +494,7 @@ h1 {
 .main-catalog::after {
   content: "";
   position: absolute;
-  top: 230px;
+  top: 208px;
   z-index: -1;
   height: 100%;
   width: 100vw;
@@ -499,18 +504,13 @@ h1 {
 .filters {
   width: 270px;
 
-  /* padding-right: 70px; */
   background-color: #efefef;
   background-size: unset;
   overflow: visible;
 }
 
-
-
-
 .filters fieldset {
   border: none;
-
 }
 
 .filters legend {
@@ -544,8 +544,6 @@ h1 {
   line-height: 40px;
 }
 
-
-
 .catalog {
   width: 830px;
 
@@ -573,7 +571,7 @@ h1 {
 }
 
 .sorting h3 {
-  margin-right: 30px;
+  margin-right: 20px;
 }
 
 .sort__list {
@@ -590,20 +588,47 @@ h1 {
   display: flex;
   flex-wrap: wrap;
   width: 760px;
-  margin-left: 70px;
+  padding: 0;
+  margin: 70px 0 20px 70px;
 }
 
 .catalog__item {
+  position: relative;
   width: 360px;
   margin: 0 0;
-
 }
 
 .catalog__item:nth-child(2n + 1) {
   margin-right: 40px;
 }
 
+.catalog__item__card {
+  display: flex;
+  flex-direction: column;
+}
+
+.catalog__item__card a {
+  order: 1;
+
+}
+
+.catalog__item__card h3 {
+  display: flex;
+  justify-content: space-between;
+}
+
+.catalog__item__image {
+  width: 360px;
+  height: 380px;
+  margin: 0;
+}
+
+.catalog__item__image img {
+  max-width: 100%;
+}
+
 .catalog__item__title {
+  width: 260px;
   font-family: 'Gilroy ExtraBold', Arial, Helvetica, sans-serif;
   font-size: 18px;
   line-height: 24px;
@@ -612,11 +637,70 @@ h1 {
 }
 
 .catalog__item__price {
+  width: 100px;
   font-family: 'Gilroy Light', Arial, Helvetica, sans-serif;
   font-size: 16px;
   line-height: 24px;
   font-weight: 400;
+  text-align: end;
   color: #000000;
+}
+
+.catalog__item__actions {
+  position: absolute;
+  top: 0;
+  left: 0;
+  box-sizing: border-box;
+  width: 360px;
+  height: 380px;
+  margin: 0;
+  padding-top: 175px;
+  z-index: 10;
+}
+
+.catalog__item__actions {
+  display: none;
+}
+
+.catalog__item:hover .catalog__item__actions {
+  display: block;
+}
+
+.catalog__item:hover .catalog__item__image {
+  opacity: 0.7;
+}
+
+.catalog__item__actions a {
+  width: 200px;
+  margin: 0 80px;
+  display: block;
+  text-align: center;
+}
+
+.catalog__item__actions a:first-child {
+  margin-bottom: 5px;
+}
+
+.catalog__item .item__new {
+  position: absolute;
+  top: 15px;
+  right: 25px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 60px;
+  height: 60px;
+
+  font-family: 'Gilroy ExtraBold', Arial, Helvetica, sans-serif;
+  font-size: 14px;
+  line-height: 24px;
+  text-transform: uppercase;
+
+
+  border: 1px solid #000000;
+  border-radius: 50%;
+  color: #000000;
+  opacity: 0.2;
 }
 
 .pagination {
