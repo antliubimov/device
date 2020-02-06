@@ -33,11 +33,11 @@
           <ul class="user-menu">
             <li>
               <ul class="user-menu__login">
-                <li class="login__in">
-                  <a href="#">Валентин Петухов</a>
+                <li>
+                  <a class="login__in" href="#">Валентин Петухов</a>
                 </li>
-                <li class="login__out">
-                  <a href="#">Выйти</a>
+                <li>
+                  <a class="login__out" href="#">Выйти</a>
                 </li>
               </ul>
             </li>
@@ -45,10 +45,10 @@
             <li>
               <ul class="user-menu__other">
                 <li>
-                  <a href="#">Сравнить</a>
+                  <a class="user-menu__compare" href="#">Сравнить</a>
                 </li>
                 <li>
-                  <a href="#">Корзина</a>
+                  <a class="user-menu__cart" href="#">Корзина</a>
                 </li>
               </ul>
             </li>
@@ -58,26 +58,38 @@
         <div class="main-header__row">
           <ul class="catalog-menu">
             <li>
-              <a class="catalog-menu__button menu-link--bold">Каталог
+              <a class="catalog-menu__button menu-link--bold" href="#">Каталог
                 товаров</a>
-              <ul class="catalog-menu__list visually-hidden">
+              <ul class="catalog-menu__list">
                 <li>
-                  <a href="#">Виртуальная реальность</a>
+                  <ul>
+                    <li>
+                      <a href="#">Виртуальная реальность</a>
+                    </li>
+                    <li>
+                      <a href="#">Моноподы для селфи</a>
+                    </li>
+                    <li>
+                      <a href="#">Экшн-камеры</a>
+                    </li>
+                  </ul>
                 </li>
                 <li>
-                  <a href="#">Моноподы для селфи</a>
+                  <ul>
+                    <li>
+                      <a href="#">Фитнес-браслеты</a>
+                    </li>
+                    <li>
+                      <a href="#">Умные часы</a>
+                    </li>
+                  </ul>
                 </li>
                 <li>
-                  <a href="#">Экшн-камеры</a>
-                </li>
-                <li>
-                  <a href="#">Фитнес-браслеты</a>
-                </li>
-                <li>
-                  <a href="#">Умные часы</a>
-                </li>
-                <li>
-                  <a href="#">Квадрокоптеры</a>
+                  <ul>
+                    <li>
+                      <a href="#">Квадрокоптеры</a>
+                    </li>
+                  </ul>
                 </li>
               </ul>
             </li>
@@ -331,6 +343,7 @@
             </li>
             <li class="login__out">
               <a href="#">Выйти</a>
+            </li>
           </ul>
 
           <ul class="site-menu">
