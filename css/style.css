@@ -168,36 +168,57 @@ h1 {
 }
 
 .main-header__search {
+  position: relative;
   width: 540px;
+  font-family: 'Open Sans', Arial, Helvetica, sans-serif;
+  font-size: 15px;
+  line-height: 30px;
+  font-weight: 300;
 }
 
 .user-search {
   position: relative;
 
+  width: 355px;
   font-family: 'Open Sans', Arial, Helvetica, sans-serif;
   font-size: 15px;
   line-height: 30px;
   font-weight: 300;
-  color: #464646;
 
-
+  padding: 3px 0;
+  padding-left: 30px;
   background-color: #f7e296;
-
+  background-image: url("../img/header/search.svg");
+  background-repeat: no-repeat;
+  background-position: 0 10px;
   border: none;
 }
 
-.user-search::before {
-  content: "";
-  position: absolute;
-  top: -12px;
-  left: 0;
-  width: 16px;
-  height: 16px;
-  background-image: url("../img/header/search.svg");
-  background-repeat: no-repeat;
-  background-position: 0 0;
-  background-color: red;
+.user-search::placeholder {
+  opacity: 0.3;
 }
+
+.user-search:hover::placeholder {
+  opacity: 0.6;
+}
+
+.user-search:focus {
+  border-bottom: 2px solid #000000;
+}
+
+.search-button {
+  display: none;
+  margin: -4px;
+  padding: 8px 20px;
+
+  border: 2px solid #000000;
+}
+
+.user-search:focus+.search-button {
+  display: inline;
+}
+
+
 
 .user-menu {
   display: flex;
