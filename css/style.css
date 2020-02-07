@@ -711,10 +711,22 @@ h1 {
 }
 
 .filter-item {
+  position: relative;
   margin: 0;
   padding: 0;
+  margin-bottom: 35px;
 
   border: none;
+}
+
+.filter-item::before {
+  content: "";
+  position: absolute;
+  top: -12px;
+  width: 200px;
+  height: 2px;
+  background-color: #000000;
+
 }
 
 .range-filter {
@@ -729,8 +741,6 @@ h1 {
 
   background-color: #f1f1f1;
   border-radius: 5px;
-
-
 }
 
 .range-controls .scale {
@@ -790,7 +800,41 @@ h1 {
   border: none;
 }
 
+.filter-item__color {
+  margin-bottom: 40px;
+}
 
+.filter-item__color legend {
+  margin-bottom: 20px;
+}
+
+.filter-item__color p {
+  position: relative;
+  margin: 0;
+  margin-left: 40px;
+  padding: 0;
+  font-family: 'Gilroy Light', Arial, Helvetica, sans-serif;
+  font-size: 14px;
+  line-height: 40px;
+  font-weight: 400;
+  color: #000000;
+}
+
+.filter-item__color label::before {
+  content: "";
+  position: absolute;
+  top: 7px;
+  left: -40px;
+  width: 24px;
+  height: 24px;
+  background-image: url("../img/checkbox-off.svg");
+  background-repeat: no-repeat;
+  background-position: 0 0;
+}
+
+.filter-item__color input:checked + label::before {
+  background-image: url("../img/checkbox-on.svg");
+}
 
 .catalog {
   width: 830px;
