@@ -205,12 +205,29 @@
 
             <ul class="sorting__list">
               <li class="sorting__item">
-                <input type="radio" name="sorting" value="low" id="sorting__low" checked>
-                <label for="sorting__low" class="visually-hidden">Сортировка: по возрастанию</label>
+                <input type="radio" name="sorting" value="low" id="sorting__low"
+                  class="visually-hidden" checked>
+                <label for="sorting__low" class="sorting__low">
+                  <svg xmlns="http://www.w3.org/2000/svg" width="11" height="10"
+                    viewBox="0 0 11 10">
+                    <path fill="#231F20" d="M5.5 0L0 10h11z" /></svg>
+                  <span class="visually-hidden">
+                    Сортировка по возрастанию
+                  </span>
+                </label>
               </li>
               <li class="sorting__item">
-                <input type="radio" name="sorting" value="high" id="sorting__high">
-                <label for="sorting__high" class="visually-hidden">Сортировка по убыванию</label>
+                <input type="radio" name="sorting" value="high" id="sorting__high"
+                  class="visually-hidden">
+                <label for="sorting__high" class="sorting__high">
+                  <svg xmlns="http://www.w3.org/2000/svg" width="11" height="10"
+                    viewBox="0 0 11 10">
+                    <path fill="#231F20" d="M5.5 10L0 0h11" /></svg>
+                  <span class="visually-hidden">
+                    Сортировка по
+                    убыванию
+                  </span>
+                </label>
               </li>
             </ul>
           </nav>

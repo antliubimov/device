@@ -169,11 +169,7 @@ h1 {
 
 .main-header__search {
   position: relative;
-  width: 540px;
-  font-family: 'Open Sans', Arial, Helvetica, sans-serif;
-  font-size: 15px;
-  line-height: 30px;
-  font-weight: 300;
+  font-size: 0;
 }
 
 .user-search {
@@ -208,7 +204,12 @@ h1 {
 
 .search-button {
   display: none;
-  margin: -4px;
+  width: 355px;
+  font-family: 'Open Sans', Arial, Helvetica, sans-serif;
+  font-size: 15px;
+  line-height: 30px;
+  font-weight: 300;
+
   padding: 8px 20px;
 
   border: 2px solid #000000;
@@ -218,6 +219,15 @@ h1 {
   display: inline;
 }
 
+.user-search:focus+.search-button:hover {
+  color: #ffffff;
+  background-color: #000000;
+}
+
+.user-search:focus+.search-button:active {
+  color: rgba(255, 255, 255, 0.3);
+  background-color: #000000;
+}
 
 
 .user-menu {
@@ -734,6 +744,20 @@ h1 {
   display: flex;
 }
 
+.sorting .sorting__low {
+  width: 4px;
+  height: 7px;
+  margin: 0;
+  margin-right: 20px;
+  padding: 0;
+}
+
+.sorting .sorting__high {
+  width: 11px;
+  height: 10px;
+  margin: 0;
+  padding: 0;
+}
 
 .catalog__list {
   display: flex;
