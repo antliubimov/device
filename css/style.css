@@ -663,10 +663,6 @@ h1 {
   background-color: #efefef;
 }
 
-.filters fieldset {
-  border: none;
-}
-
 .filters legend {
   font-family: 'Gilroy ExtraBold', Arial, Helvetica, sans-serif;
   font-size: 18px;
@@ -690,7 +686,7 @@ h1 {
 .filters h3 {
   padding-top: 23px;
   padding-bottom: 23px;
-  margin-bottom: 69px;
+  /* margin-bottom: 69px; */
   background-color: #dcdcdc;
 }
 
@@ -705,10 +701,96 @@ h1 {
   background-color: #dcdcdc;
 }
 
+.filters form {
+  margin-top: 80px;
+}
+
 .filters label {
   font-size: 14px;
   line-height: 40px;
 }
+
+.filter-item {
+  margin: 0;
+  padding: 0;
+
+  border: none;
+}
+
+.range-filter {
+  width: 200px;
+  margin-top: 36px;
+}
+
+.range-controls {
+  position: relative;
+
+  padding-bottom: 10px;
+
+  background-color: #f1f1f1;
+  border-radius: 5px;
+
+
+}
+
+.range-controls .scale {
+  height: 2px;
+
+  background-color: #dbdbdb;
+}
+
+.range-controls .bar {
+  width: 60%;
+  height: 2px;
+
+  background-color: #91c92f;
+}
+
+.range-controls .toggle {
+  position: absolute;
+  top: -9px;
+  left: 0;
+  width: 4px;
+  height: 4px;
+  padding: 0;
+
+  border: 8px solid #ffffff;
+  background-color: #ababab;
+  box-shadow: 0 2px 1px 0 #cfcfcf;
+  border-radius: 50%;
+
+  cursor: pointer;
+}
+
+.range-controls .toggle-min {
+  left: -5px;
+}
+
+.range-controls .toggle-max {
+  left: 110px;
+}
+
+.price-controls {
+  font-size: 0;
+}
+
+.price-controls label {
+  display: inline-block;
+  width: 45%;
+  font-family: 'Gilroy Light', Arial, Helvetica, sans-serif;
+  font-size: 14px;
+  line-height: 24px;
+  font-weight: 400;
+  color: #000000;
+  opacity: 0.2;
+}
+
+.price-controls input {
+  width: 60px;
+  border: none;
+}
+
+
 
 .catalog {
   width: 830px;

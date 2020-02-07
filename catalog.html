@@ -135,7 +135,7 @@
         <section class="filters">
           <h3>Фильтр:</h3>
           <form action="https://echo.htmlacademy.ru" method="get">
-            <fieldset>
+            <fieldset class="filter-item">
               <legend>Стоимость</legend>
               <div class="range-filter">
                 <div class="range-controls">
@@ -146,13 +146,19 @@
                   <div class="toggle toggle-max"></div>
                 </div>
                 <div class="price-controls">
-
+                  <label class="min-price">
+                    от
+                    <input type="text" name="min-price" value="0">
+                  </label>
+                  <label class="max-price">
+                    до
+                    <input type="text" class="max-price" value="5000">
+                  </label>
                 </div>
               </div>
-              <input type="range" name="value" id="value">
             </fieldset>
 
-            <fieldset>
+            <fieldset class="filter-item">
               <legend>Цвет</legend>
               <p>
                 <input type="checkbox" name="black" id="black" checked>
@@ -176,7 +182,7 @@
               </p>
             </fieldset>
 
-            <fieldset>
+            <fieldset class="filter-item">
               <legend>Bluetooth</legend>
               <p>
                 <input type="radio" name="bluetooth" id="has" checked>
@@ -348,8 +354,8 @@
           </section>
         </section>
 
-        </div>
       </div>
+    </div>
   </main>
 
   <!-- Footer -->
