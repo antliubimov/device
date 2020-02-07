@@ -1039,13 +1039,8 @@ h1 {
 .main-footer .login__in::before {
   content: "";
   position: absolute;
-  top: 8px;
-  left: -26px;
-  width: 16px;
-  height: 16px;
-  background-image: url('../img/footer/user.svg');
-  background-repeat: no-repeat;
-  background-position: 0 0;
+
+
 }
 
 .main-footer .site-menu {
@@ -1101,37 +1096,6 @@ h1 {
   margin-right: 60px;
 }
 
-.main-footer .user-menu__compare {
-  position: relative;
-}
-
-.main-footer .user-menu__compare::before {
-  content: "";
-  position: absolute;
-  top: 5px;
-  left: -20px;
-  width: 16px;
-  height: 16px;
-  background-image: url('../img/footer/compare.svg');
-  background-repeat: no-repeat;
-  background-position: 0 0;
-}
-
-.main-footer .user-menu__cart {
-  position: relative;
-}
-
-.main-footer .user-menu__cart::before {
-  content: "";
-  position: absolute;
-  top: 3px;
-  left: -22px;
-  width: 16px;
-  height: 16px;
-  background-image: url('../img/footer/cart.svg');
-  background-repeat: no-repeat;
-  background-position: 0 0;
-}
 
 .main-footer .main-footer__tel {
   margin-bottom: 62px;

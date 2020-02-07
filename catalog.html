@@ -18,7 +18,7 @@
       <div class="main-header__logotype-wrap">
         <div class="main-header__logotype">
           <a href="index.html" class="main-header__logo">
-            <img src="img/header/device.svg" alt="Логотип магазина Device">
+            <img src="img/header/device.svg" width="164" height="36" alt="Логотип магазина Device">
           </a>
         </div>
       </div>
@@ -135,9 +135,21 @@
       <div class="main__container">
         <section class="filters">
           <h3>Фильтр:</h3>
-          <form action="https://echo.htmlacademy.ru" method="post">
+          <form action="https://echo.htmlacademy.ru" method="get">
             <fieldset>
               <legend>Стоимость</legend>
+              <div class="range-filter">
+                <div class="range-controls">
+                  <div class="scale">
+                    <div class="bar"></div>
+                  </div>
+                  <div class="toggle toggle-min"></div>
+                  <div class="toggle toggle-max"></div>
+                </div>
+                <div class="price-controls">
+
+                </div>
+              </div>
               <input type="range" name="value" id="value">
             </fieldset>
 
@@ -433,13 +445,13 @@
         <div class="main-footer__column-three">
           <ul class="main-footer__user-menu">
             <li>
-              <a href="#">Сравнить</a>
+              <a class="user-menu__compare" href="#">Сравнить</a>
             </li>
             <li>
-              <a href="#">Корзина</a>
+              <a class="user-menu__cart" href="#">Корзина</a>
             </li>
           </ul>
-          <p>Тел.: +7(495)495-95-95</p>
+          <p class="main-footer__tel">Тел.: +7(495)495-95-95</p>
           <p class="copyright">
             <a href="https://htmlacademy.ru">
               <span class="visually-hidden">HTML Academy</span>
