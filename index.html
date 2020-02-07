@@ -18,7 +18,7 @@
       <div class="main-header__logotype-wrap">
         <div class="main-header__logotype">
           <a href="index.html" class="main-header__logo">
-            <img src="img/header/device.svg" alt="Логотип магазина Device">
+            <img src="img/header/device.svg" width="164" height="36" alt="Логотип магазина Device">
           </a>
         </div>
       </div>
@@ -26,15 +26,15 @@
       <div class="main-header__container">
         <div class="main-header__row">
           <div class="main-header__search">
-            <input type="search" class="user-search" id="search" placeholder="Поиск по сайту">
-            <label for="search" class="visually-hidden">Найти</label>
+            <input type="text" class="user-search" id="search" placeholder="Поиск по сайту">
+            <label for="search" class="search-button">Найти</label>
           </div>
 
           <ul class="user-menu">
             <li>
               <ul class="user-menu__login">
-                <li class="login__in">
-                  <a href="#">Войти</a>
+                <li>
+                  <a class="login__in" href="#">Войти</a>
                 </li>
               </ul>
             </li>
@@ -42,10 +42,10 @@
             <li>
               <ul class="user-menu__other">
                 <li>
-                  <a href="#">Сравнить</a>
+                  <a class="user-menu__compare" href="#">Сравнить</a>
                 </li>
                 <li>
-                  <a href="#">Корзина</a>
+                  <a class="user-menu__cart" href="#">Корзина</a>
                 </li>
               </ul>
             </li>
@@ -55,26 +55,38 @@
         <div class="main-header__row">
           <ul class="catalog-menu">
             <li>
-              <a class="catalog-menu__button menu-link--bold">Каталог
+              <a class="catalog-menu__button menu-link--bold" href="#">Каталог
                 товаров</a>
-              <ul class="catalog-menu__list visually-hidden">
+              <ul class="catalog-menu__list">
                 <li>
-                  <a href="#">Виртуальная реальность</a>
+                  <ul>
+                    <li>
+                      <a href="#">Виртуальная реальность</a>
+                    </li>
+                    <li>
+                      <a href="#">Моноподы для селфи</a>
+                    </li>
+                    <li>
+                      <a href="#">Экшн-камеры</a>
+                    </li>
+                  </ul>
                 </li>
                 <li>
-                  <a href="#">Моноподы для селфи</a>
+                  <ul>
+                    <li>
+                      <a href="#">Фитнес-браслеты</a>
+                    </li>
+                    <li>
+                      <a href="#">Умные часы</a>
+                    </li>
+                  </ul>
                 </li>
                 <li>
-                  <a href="#">Экшн-камеры</a>
-                </li>
-                <li>
-                  <a href="#">Фитнес-браслеты</a>
-                </li>
-                <li>
-                  <a href="#">Умные часы</a>
-                </li>
-                <li>
-                  <a href="#">Квадрокоптеры</a>
+                  <ul>
+                    <li>
+                      <a href="#">Квадрокоптеры</a>
+                    </li>
+                  </ul>
                 </li>
               </ul>
             </li>
@@ -429,13 +441,13 @@
         <div class="main-footer__column-three">
           <ul class="main-footer__user-menu">
             <li>
-              <a href="#">Сравнить</a>
+              <a class="user-menu__compare" href="#">Сравнить</a>
             </li>
             <li>
-              <a href="#">Корзина</a>
+              <a class="user-menu__cart" href="#">Корзина</a>
             </li>
           </ul>
-          <p>Тел.: +7(495)495-95-95</p>
+          <p class="main-footer__tel">Тел.: +7(495)495-95-95</p>
           <p class="copyright">
             <a href="https://htmlacademy.ru">
               <span class="visually-hidden">HTML Academy</span>
