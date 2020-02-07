@@ -1001,6 +1001,7 @@ h1 {
 
 .catalog__item__actions {
   display: none;
+  cursor: pointer;
 }
 
 .catalog__item:hover .catalog__item__actions {
