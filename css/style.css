@@ -664,6 +664,7 @@ h1 {
 }
 
 .filters legend {
+  margin-bottom: 20px;
   font-family: 'Gilroy ExtraBold', Arial, Helvetica, sans-serif;
   font-size: 18px;
   line-height: 24px;
@@ -710,6 +711,18 @@ h1 {
   line-height: 40px;
 }
 
+.filters p {
+  position: relative;
+  margin: 0;
+  margin-left: 40px;
+  padding: 0;
+  font-family: 'Gilroy Light', Arial, Helvetica, sans-serif;
+  font-size: 14px;
+  line-height: 40px;
+  font-weight: 400;
+  color: #000000;
+}
+
 .filter-item {
   position: relative;
   margin: 0;
@@ -726,12 +739,11 @@ h1 {
   width: 200px;
   height: 2px;
   background-color: #000000;
-
 }
 
 .range-filter {
   width: 200px;
-  margin-top: 36px;
+  margin-top: 16px;
 }
 
 .range-controls {
@@ -804,22 +816,6 @@ h1 {
   margin-bottom: 40px;
 }
 
-.filter-item__color legend {
-  margin-bottom: 20px;
-}
-
-.filter-item__color p {
-  position: relative;
-  margin: 0;
-  margin-left: 40px;
-  padding: 0;
-  font-family: 'Gilroy Light', Arial, Helvetica, sans-serif;
-  font-size: 14px;
-  line-height: 40px;
-  font-weight: 400;
-  color: #000000;
-}
-
 .filter-item__color label::before {
   content: "";
   position: absolute;
@@ -836,9 +832,33 @@ h1 {
   background-image: url("../img/checkbox-on.svg");
 }
 
+.filter-item__bluetooth {
+  margin-bottom: 31px;
+}
+
+.filter-item__bluetooth label::before {
+  content: "";
+  position: absolute;
+  top: 7px;
+  left: -40px;
+  width: 25px;
+  height: 25px;
+  background-image: url("../img/radio-off.svg");
+  background-repeat: no-repeat;
+  background-position: 0 0;
+}
+
+.filter-item__bluetooth input:checked+label::before {
+  background-image: url("../img/radio-on.svg");
+}
+
+.filters .btn__filter {
+  width: 200px;
+  border: none;
+}
+
 .catalog {
   width: 830px;
-  /* margin-bottom: 20px; */
   padding-bottom: 77px;
 }
 
@@ -1063,6 +1083,10 @@ h1 {
 
 .pagination__page:hover,
 .pagination__page:focus {
+  opacity: 0.6;
+}
+
+.pagination__page:active {
   opacity: 1;
 }
 
