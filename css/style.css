@@ -83,7 +83,7 @@ h1 {
 
 .btn {
   position: relative;
-  z-index: 1;
+  /* z-index: 1; */
   padding: 8px 0;
 
   font-family: 'Gilroy ExtraBold', Arial, Helvetica, sans-serif;
@@ -1276,7 +1276,7 @@ h1 {
   margin-right: 20px;
 }
 
-.main-footer .login__in::before {
+.main-footer .login__in a::before {
   content: "";
   position: absolute;
   top: 8px;
@@ -1390,6 +1390,46 @@ h1 {
   opacity: 0.3;
 }
 
+.modal {
+  position: fixed;
+  z-index: 100;
+  box-shadow: 0px 10px 20px 0px rgba(0, 0, 0, 0.2);
+}
+
+.modal__close {
+  position: absolute;
+  top: 22px;
+  right: 22px;
+  width: 55px;
+  height: 55px;
+
+  font-size: 0;
+  border: 0;
+  border-radius: 50%;
+  background-color: #e9d07c;
+  cursor: pointer;
+}
+
+.modal__close::before,
+.modal__close::after {
+  content: "";
+  position: absolute;
+  top: 27px;
+  left: 13px;
+  width: 29px;
+  height: 2px;
+  background-color: #f4ecd8;
+}
+
+.modal__close::before {
+  transform: rotate(45deg);
+}
+
+.modal__close::after {
+  transform: rotate(-45deg);
+}
+
+
 .modal__write_us label {
   font-family: 'Gilroy ExtraBold', Arial, Helvetica, sans-serif;
   font-size: 16px;
@@ -1404,6 +1444,19 @@ h1 {
   background: none;
 }
 
-.modal__map img {
-  box-shadow: 0 10px 20px 0 rgba(0, 0, 0, 0.2);
+.modal__map {
+  top: 50%;
+  left: 50%;
+  display: none;
+
+  width: 960px;
+  height: 560px;
+  margin-top: -280px;
+  margin-left: -480px;
+}
+
+.modal__map img {}
+
+.modal__show {
+  display: block;
 }
