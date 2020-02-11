@@ -118,7 +118,7 @@
 
   <!-- Main -->
   <main>
-    <ul class="container">
+    <div class="container">
       <input class="visually-hidden" id="product-1" type="radio" name="slider" checked>
       <input class="visually-hidden" id="product-2" type="radio" name="slider">
       <input class="visually-hidden" id="product-3" type="radio" name="slider">
@@ -266,41 +266,36 @@
     <section class="services">
       <div class="container">
         <h2 class="visually-hidden">Сервисы</h2>
+        <input class="visually-hidden" type="radio" name="service" id="delivery" value="delivery" checked>
+        <input class="visually-hidden" type="radio" name="service" id="warranty" value="warranty">
+        <input class="visually-hidden" type="radio" name="service" id="credit" value="credit">
         <div class="service-wrap">
           <div class="service__list">
-            <label for="delivery" class="btn btn__service btn__service--checked"><input
-                class="visually-hidden" type="radio" name="service" id="delivery" value="delivery"
-                checked>Доставка</label>
-
+            <label for="delivery" class="btn btn__service btn__service--checked">
+                Доставка
+            </label>
             <label for="warranty" class="btn btn__service">
-              <input class="visually-hidden" type="radio" name="service" id="warranty"
-                value="warranty">
               Гарантия
             </label>
-
             <label for="credit" class="btn btn__service">
-              <input class="visually-hidden" type="radio" name="service" id="credit" value="credit">
               Кредит
             </label>
           </div>
 
-          <div class="service current-service">
+          <div class="service service__delivery current-service">
             <h3>Доставка</h3>
             <p>Мы с удовольствием доставим ваш товар прямо к вашему подъезду совершенно бесплатно!
               Ведь мы неплохо заработаем, поднимая его на ваш этаж.</p>
-            <img src="img/services/delivery.svg" alt="Доставка">
           </div>
-          <div class="service visually-hidden">
+          <div class="service service__warranty">
             <h3>Гарантия</h3>
             <p>Если из-за возгорания купленного у нас товара у вас сгорит дом - не переживайте, мы
               выдадим вам новый. Товар, не дом конечно же.</p>
-            <img src="img/services/warranty.svg" alt="Гарантия">
           </div>
-          <div class="service visually-hidden">
+          <div class="service service__credit">
             <h3>Кредит</h3>
             <p>Залезть в долговую яму стало проще! Кредитные консультанты подберут для вас наиболее
               выгодные условия кредита. Выгодные для нашего банка разумеется.</p>
-            <img src="img/services/credit.svg" alt="Кредит">
           </div>
         </div>
       </div>
