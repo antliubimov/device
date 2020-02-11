@@ -723,7 +723,7 @@ h1 {
 
 .services {
   position: relative;
-  margin-bottom: 210px;
+  margin-bottom: 206px;
 }
 
 .services::before {
@@ -864,6 +864,7 @@ h1 {
 
 .logo__list {
   display: flex;
+  justify-content: space-between;
 }
 
 .logo__item {
