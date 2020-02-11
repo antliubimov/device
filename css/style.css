@@ -674,7 +674,7 @@ h1 {
 }
 
 .popular {
-  margin-bottom: 180px;
+  margin-bottom: 60px;
 }
 
 .popular__list {
@@ -697,11 +697,9 @@ h1 {
 }
 
 .popular__list div {
-
-  height: 160px;
-
   display: flex;
   justify-content: center;
+  height: 160px;
 
   background-color: #f7e296;
 }
@@ -713,6 +711,10 @@ h1 {
 
 .popular__list div:active>img {
   opacity: 0.3;
+}
+
+.popular__list p {
+  margin-top: 35px;
 }
 
 .popular__item:nth-child(2) img {
