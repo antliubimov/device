@@ -404,24 +404,33 @@ h1 {
 
 .slider {
   position: relative;
-  /* margin-right: 60px; */
-  margin-bottom: 100px;
+
+  margin-bottom: 103px;
 }
 
 .slider-controls {
   position: absolute;
-  top: 326px;
-  right: 63px;
+  top: 329px;
+  right: 96px;
   z-index: 100;
 
   text-align: center;
   font-size: 0;
 }
 
-.slider-controls i {
+.slider-controls label {
   position: relative;
+  margin-right: 33px;
+}
 
-  display: inline-block;
+.slider-controls label:last-child {
+  margin-right: 0;
+}
+
+.slider-controls label::before {
+  content: "";
+  position: absolute;
+
   width: 10px;
   height: 10px;
   margin-right: 21px;
@@ -431,18 +440,26 @@ h1 {
   cursor: pointer;
 }
 
-.slider-controls i::after {
+#product-1:checked~.slider label[for="product-1"]::after,
+#product-2:checked~.slider label[for="product-2"]::after,
+#product-3:checked~.slider label[for="product-3"]::after {
   content: "";
 
   position: absolute;
-  top: 3px;
-  left: 3px;
+  top: -11px;
+  left: 4px;
   z-index: 1;
   width: 2px;
   height: 2px;
 
   border: 1px solid #000000;
   border-radius: 50%;
+}
+
+#product-1:checked~.slider #slider-1,
+#product-2:checked~.slider #slider-2,
+#product-3:checked~.slider #slider-3 {
+  display: flex;
 }
 
 .slider-list {
@@ -457,11 +474,7 @@ h1 {
   justify-content: space-between;
   position: relative;
 
-  /* display: none; */
-}
-
-.slider-item:nth-child(1) {
-  display: flex;
+  display: none;
 }
 
 .slider-item::before {
