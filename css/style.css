@@ -1647,8 +1647,18 @@ h1 {
   font-size: 0;
   border: 0;
   border-radius: 50%;
-  background-color: #e9d07c;
+  background-color: #f0c52e;
+  opacity: 0.5;
   cursor: pointer;
+}
+
+.modal__close:hover,
+.modal__close:focus {
+  opacity: 1;
+}
+
+.modal__close:active {
+  opacity: 0.3;
 }
 
 .modal__close::before,
