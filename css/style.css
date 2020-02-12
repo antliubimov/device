@@ -1633,6 +1633,9 @@ h1 {
 
 .modal {
   position: fixed;
+  top: 50%;
+  left: 50%;
+  display: none;
   z-index: 100;
   box-shadow: 0px 10px 20px 0px rgba(0, 0, 0, 0.2);
 }
@@ -1643,7 +1646,7 @@ h1 {
   right: 22px;
   width: 55px;
   height: 55px;
-
+  z-index: 2;
   font-size: 0;
   border: 0;
   border-radius: 50%;
@@ -1696,17 +1699,30 @@ h1 {
 }
 
 .modal__map {
-  top: 50%;
-  left: 50%;
-  display: none;
-
   width: 960px;
   height: 560px;
   margin-top: -280px;
   margin-left: -480px;
 }
 
-.modal__map img {}
+.modal__map iframe {
+  position: relative;
+  z-index: 1;
+}
+
+.modal__map p {
+  position: absolute;
+  top: 0;
+  left: 0;
+  z-index: -1;
+  padding: 0;
+  margin: 0;
+}
+
+.modal__map img {
+  max-width: 100%;
+  height: auto;
+}
 
 .modal__show {
   display: block;
